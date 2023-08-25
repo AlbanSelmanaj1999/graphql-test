@@ -9,7 +9,7 @@ require('dotenv').config();
 const cookieParser=require('cookie-parser');
 mongoose.connect('mongodb://localhost:27017/grahql-test');
 app.use(cookieParser());
-console.log('dsgsdg')
+console.log('dsgsdgdasdasdad')
 const server = new ApolloServer({typeDefs,resolvers,context:({req,res})=>({req,res})});
 
 async function startServer() {
