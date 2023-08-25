@@ -9,7 +9,7 @@ const resolvers={
         test: (_,args,context)=>{
             const {session_token}=context.req.cookies;
             checkToken(session_token);
-            return "test query";
+            return "test edmondi";
         },
         getUsers:async ()=>{
             const {session_token}=context.req.cookies;
